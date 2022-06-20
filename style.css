@@ -178,7 +178,7 @@ a:hover {
   margin-top: 1.5vw;
 }
 .tapestry .tapestry-wrapper {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -194,16 +194,16 @@ a:hover {
           align-items: center;
 }
 .tapestry .tapestry-wrapper .tapestrys {
-  width: 30%;
+  width: 20%;
   position: relative;
   z-index: 1;
 }
 .tapestry .tapestry-wrapper .tapestrys .pickel {
   position: absolute;
   z-index: 2;
-  left: 7.5vw;
+  left: 5.5vw;
   top: 1vw;
-  width: 7vw;
+  width: 4.8vw;
 }
 .tapestry .tapestry-wrapper .tapestrys .pickel img {
   width: 100%;
@@ -211,7 +211,7 @@ a:hover {
 .tapestry .tapestry-wrapper .tapestrys h2 {
   padding-top: 1vw;
   color: white;
-  font-size: 1vw;
+  font-size: 0.7vw;
 }
 .tapestry .tapestry-wrapper .tapestrys p {
   padding-top: 1vw;

@@ -161,21 +161,21 @@ a:hover {
   width: 100%;
   margin-top: 1.5vw;
   .tapestry-wrapper{
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     .tapestrys{
-      width: 30%;
+      width: 20%;
       position: relative;
       z-index: 1;
       .pickel{
         position: absolute;
         z-index: 2;
-        left: 7.5vw;
+        left: 5.5vw;
         top: 1vw;
-        width: 7vw;
+        width: 4.8vw;
         img{
           width: 100%;
         }
@@ -183,7 +183,7 @@ a:hover {
       h2{
         padding-top: 1vw;
         color: white;
-        font-size: 1.0vw;
+        font-size: 0.7vw;
       }
       p{
         padding-top: 1vw;
