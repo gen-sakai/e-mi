@@ -106,7 +106,7 @@ a:hover {
   padding: 0.5vw 0;
 }
 .gnav .gnav-wrapper {
-  width: 60%;
+  width: 20%;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -130,7 +130,6 @@ a:hover {
   color: black;
 }
 .gnav .gnav-wrapper nav {
-  width: 50vw;
   display: block;
 }
 .gnav .gnav-wrapper nav ul {
@@ -157,9 +156,9 @@ a:hover {
 
 .section1 {
   width: 100%;
-  height: 37vw;
-  background: url(img/mainvisual.jpg) center center no-repeat;
-  background-size: cover;
+  height: 40.4vw;
+  background: url(img/mainvisual.jpg) center bottom no-repeat;
+  background-size: contain;
 }
 
 .section2 {
@@ -248,23 +247,26 @@ a:hover {
           align-items: center;
   width: 80%;
   margin: 0 auto;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .about-emi .about-emi-wrapper .about-emis {
-  width: 23%;
+  width: 47%;
   background-color: white;
   border: 2px solid rgba(0, 0, 0, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 1vw;
+  padding: 2vw 2vw 8vw 2vw;
   margin-bottom: 3vw;
 }
 .about-emi .about-emi-wrapper .about-emis h3 {
   text-align: center;
-  font-size: 1vw;
+  font-size: 1.5vw;
   padding-bottom: 0.5vw;
 }
 .about-emi .about-emi-wrapper .about-emis p {
-  font-size: 0.7vw;
+  font-size: 0.8vw;
 }
 
 .card {
@@ -366,7 +368,7 @@ a:hover {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .br-sp {
     display: block;
   }
@@ -382,5 +384,246 @@ a:hover {
   .container {
     width: 90vw;
     margin: 0 auto;
+  }
+
+  .buy-pickel {
+    position: fixed;
+    z-index: 100;
+    width: 15vw;
+    right: 0;
+    top: 14vw;
+  }
+  .buy-pickel a {
+    display: block;
+    width: 100%;
+  }
+  .buy-pickel a img {
+    width: 100%;
+  }
+
+  .gnav {
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+    height: 10vw;
+    background-color: black;
+    padding: 2vw 0;
+  }
+  .gnav .gnav-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gnav .gnav-wrapper .logo {
+    background: white;
+    padding: 0.2vw 0.5vw;
+  }
+  .gnav .gnav-wrapper .logo p {
+    font-size: 3vw;
+    color: black;
+  }
+  .gnav .gnav-wrapper nav {
+    display: block;
+  }
+  .gnav .gnav-wrapper nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gnav .gnav-wrapper nav ul li {
+    display: block;
+  }
+  .gnav .gnav-wrapper nav ul li a {
+    font-size: 3vw;
+    color: white;
+  }
+
+  .section1 {
+    width: 100%;
+    height: 47vw;
+    background: url(img/mainvisual.jpg) center bottom no-repeat;
+    background-size: contain;
+  }
+
+  .section2 {
+    width: 100%;
+  }
+  .section2 .komonjo {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section2 .komonjo img {
+    width: 100%;
+    display: block;
+  }
+
+  .tapestry {
+    width: 100%;
+    margin-top: 1.5vw;
+  }
+  .tapestry .tapestry-wrapper {
+    width: 75%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tapestry .tapestry-wrapper .tapestrys {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .tapestry .tapestry-wrapper .tapestrys .pickel {
+    position: absolute;
+    z-index: 2;
+    left: 21.5vw;
+    top: 5vw;
+    width: 17vw;
+  }
+  .tapestry .tapestry-wrapper .tapestrys .pickel img {
+    width: 100%;
+  }
+  .tapestry .tapestry-wrapper .tapestrys h2 {
+    padding-top: 3vw;
+    color: white;
+    font-size: 2.5vw;
+  }
+  .tapestry .tapestry-wrapper .tapestrys p {
+    padding-top: 3vw;
+    width: 100%;
+    font-size: 2.8vw;
+    line-height: 1.6;
+    padding-bottom: 8vw;
+  }
+
+  .about-emi {
+    width: 100%;
+    background-color: #eedbb2;
+    padding-top: 13.5vw;
+  }
+  .about-emi h2 {
+    text-align: center;
+    font-size: 6vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+  .about-emi .about-emi-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .about-emi .about-emi-wrapper .about-emis {
+    width: 100%;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 4vw 4vw 32vw 4vw;
+    margin-bottom: 3vw;
+  }
+  .about-emi .about-emi-wrapper .about-emis h3 {
+    text-align: center;
+    font-size: 4vw;
+    padding-bottom: 3vw;
+  }
+  .about-emi .about-emi-wrapper .about-emis p {
+    font-size: 2.8vw;
+  }
+
+  .partners {
+    width: 100%;
+    margin: 5vw 0;
+    height: auto;
+  }
+  .partners .partners-inner {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .partners .partners-inner .partners-content .tapestry-bg {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .partners .partners-inner .partners-content .tapestry-bg img {
+    width: 100%;
+    display: block;
+  }
+  .partners .partners-inner .partners-content .tapestry-bg .partners-contents {
+    position: absolute;
+    top: 10vw;
+    z-index: 2;
+    left: 19vw;
+  }
+  .partners .partners-inner .partners-content .tapestry-bg .partners-contents h3 {
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    padding-bottom: 3vw;
+  }
+  .partners .partners-inner .partners-content .tapestry-bg .partners-contents p {
+    color: white;
+    font-size: 3vw;
+    padding-bottom: 1vw;
+  }
+
+  .roadmap {
+    width: 100%;
+  }
+  .roadmap p {
+    font-size: 4vw;
   }
 }/*# sourceMappingURL=style.css.map */
