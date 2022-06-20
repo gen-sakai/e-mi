@@ -40,9 +40,8 @@ body {
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   -webkit-overflow-scrolling: touch;
-  letter-spacing: 0.24rem;
   width: 100%;
-  max-width: 1040px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -83,10 +82,32 @@ a:hover {
   text-align: center;
 }
 
-.section1 {
+.buy-pickel {
+  position: fixed;
+  z-index: 100;
+  width: 11vw;
+  right: 0;
+  top: 6vw;
+}
+.buy-pickel a {
+  display: block;
   width: 100%;
-  height: 400px;
-  background-color: #72706c;
+}
+.buy-pickel a img {
+  width: 100%;
+}
+
+.gnav {
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+  height: 3vw;
+  background-color: black;
+  padding: 0.5vw 0;
+}
+.gnav .gnav-wrapper {
+  width: 60%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -100,39 +121,66 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.section1 p {
-  font-size: 2vw;
-  margin: 0 auto;
+.gnav .gnav-wrapper .logo {
+  background: white;
+  padding: 0.2vw 0.5vw;
+}
+.gnav .gnav-wrapper .logo p {
+  font-size: 1vw;
+  color: black;
+}
+.gnav .gnav-wrapper nav {
+  width: 50vw;
+  display: block;
+}
+.gnav .gnav-wrapper nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gnav .gnav-wrapper nav ul li {
+  display: block;
+}
+.gnav .gnav-wrapper nav ul li a {
+  font-size: 1vw;
   color: white;
+}
+
+.section1 {
+  width: 100%;
+  height: 37vw;
+  background: url(img/mainvisual.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 .section2 {
   width: 100%;
-  height: 1000px;
-  background-color: #b69a63;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-.section2 p {
-  font-size: 2vw;
+.section2 .komonjo {
+  width: 100%;
   margin: 0 auto;
-  color: white;
+}
+.section2 .komonjo img {
+  width: 100%;
+  display: block;
 }
 
-.section3 {
+.tapestry {
   width: 100%;
-  height: 1000px;
-  background-color: #584622;
+  margin-top: 1.5vw;
+}
+.tapestry .tapestry-wrapper {
+  width: 75%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -146,10 +194,154 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.section3 p {
-  font-size: 2vw;
-  margin: 0 auto;
+.tapestry .tapestry-wrapper .tapestrys {
+  width: 30%;
+  position: relative;
+  z-index: 1;
+}
+.tapestry .tapestry-wrapper .tapestrys .pickel {
+  position: absolute;
+  z-index: 2;
+  left: 7.5vw;
+  top: 1vw;
+  width: 7vw;
+}
+.tapestry .tapestry-wrapper .tapestrys .pickel img {
+  width: 100%;
+}
+.tapestry .tapestry-wrapper .tapestrys h2 {
+  padding-top: 1vw;
   color: white;
+  font-size: 1vw;
+}
+.tapestry .tapestry-wrapper .tapestrys p {
+  padding-top: 1vw;
+  width: 100%;
+  font-size: 0.8vw;
+  line-height: 1.6;
+  padding-bottom: 2vw;
+}
+
+.about-emi {
+  width: 100%;
+  background-color: #eedbb2;
+  padding-top: 2.5vw;
+}
+.about-emi h2 {
+  text-align: center;
+  font-size: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+.about-emi .about-emi-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.about-emi .about-emi-wrapper .about-emis {
+  width: 23%;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1vw;
+  margin-bottom: 3vw;
+}
+.about-emi .about-emi-wrapper .about-emis h3 {
+  text-align: center;
+  font-size: 1vw;
+  padding-bottom: 0.5vw;
+}
+.about-emi .about-emi-wrapper .about-emis p {
+  font-size: 0.7vw;
+}
+
+.card {
+  width: 100%;
+  margin-top: 2vw;
+  background-color: skyblue;
+  padding: 2vw 0;
+}
+.card .card-inner {
+  width: 80vw;
+  margin: 0 auto;
+}
+.card .card-inner .card-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.card .card-inner .card-wrapper .cards {
+  background-color: white;
+  padding: 1vw;
+  width: 23%;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.card .card-inner .card-wrapper .cards img {
+  display: block;
+  width: 100%;
+  margin-bottom: 1vw;
+}
+.card .card-inner .card-wrapper .cards p {
+  font-size: 0.7vw;
+}
+
+.partners {
+  width: 100%;
+  margin: 2vw 0;
+  height: 20vw;
+}
+.partners .partners-inner {
+  width: 80vw;
+  margin: 0 auto;
+}
+.partners .partners-inner .partners-content .tapestry-bg {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+.partners .partners-inner .partners-content .tapestry-bg img {
+  width: 100%;
+  display: block;
+}
+.partners .partners-inner .partners-content .tapestry-bg .partners-contents {
+  position: absolute;
+  top: 10vw;
+  z-index: 2;
+  left: 17vw;
+}
+.partners .partners-inner .partners-content .tapestry-bg .partners-contents h3 {
+  text-align: center;
+  font-size: 3vw;
+  color: white;
+  padding-bottom: 3vw;
+}
+.partners .partners-inner .partners-content .tapestry-bg .partners-contents p {
+  color: white;
+  font-size: 2vw;
+  padding-bottom: 1vw;
 }
 
 @media screen and (max-width: 375px) {
