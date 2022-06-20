@@ -265,7 +265,7 @@ a:hover {
 .partners{
   width: 100%;
   margin: 2vw 0;
-  height: 20vw;
+  height: auto;
   .partners-inner{
     width: 80vw;
     margin: 0 auto;
@@ -302,6 +302,19 @@ a:hover {
         
       }
     }
+  }
+}
+
+.roadmap{
+  width: 100%;
+  height: 30vw;
+  background-color: #c5c5c5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p{
+    font-size: 2vw;
+    margin: 0 auto;
   }
 }
 
