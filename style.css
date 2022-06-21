@@ -194,31 +194,9 @@ a:hover {
           align-items: center;
 }
 .tapestry .tapestry-wrapper .tapestrys {
-  width: 20%;
+  width: 22%;
   position: relative;
   z-index: 1;
-}
-.tapestry .tapestry-wrapper .tapestrys .pickel {
-  position: absolute;
-  z-index: 2;
-  left: 5.5vw;
-  top: 1vw;
-  width: 4.8vw;
-}
-.tapestry .tapestry-wrapper .tapestrys .pickel img {
-  width: 100%;
-}
-.tapestry .tapestry-wrapper .tapestrys h2 {
-  padding-top: 1vw;
-  color: white;
-  font-size: 0.7vw;
-}
-.tapestry .tapestry-wrapper .tapestrys p {
-  padding-top: 1vw;
-  width: 100%;
-  font-size: 0.8vw;
-  line-height: 1.6;
-  padding-bottom: 2vw;
 }
 
 .about-emi {
@@ -252,21 +230,29 @@ a:hover {
           flex-wrap: wrap;
 }
 .about-emi .about-emi-wrapper .about-emis {
-  width: 47%;
-  background-color: white;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  background: url(img/sekiban.png) center center no-repeat;
+  background-size: contain;
+  width: 43%;
+  background-color: rgb(101, 101, 101);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 2vw 2vw 8vw 2vw;
   margin-bottom: 3vw;
 }
 .about-emi .about-emi-wrapper .about-emis h3 {
+  padding-left: 2vw;
   text-align: center;
   font-size: 1.5vw;
   padding-bottom: 0.5vw;
+  color: white;
+  text-shadow: 3px 3px 3px #000;
 }
 .about-emi .about-emi-wrapper .about-emis p {
   font-size: 0.8vw;
+  color: white;
+  text-shadow: 3px 3px 3px #000;
+  width: 45%;
+  margin: 0 auto;
 }
 
 .card {
@@ -504,31 +490,9 @@ a:hover {
   }
   .tapestry .tapestry-wrapper .tapestrys {
     width: 80%;
-    margin: 0 auto;
+    margin: 4vw auto;
     position: relative;
     z-index: 1;
-  }
-  .tapestry .tapestry-wrapper .tapestrys .pickel {
-    position: absolute;
-    z-index: 2;
-    left: 21.5vw;
-    top: 5vw;
-    width: 17vw;
-  }
-  .tapestry .tapestry-wrapper .tapestrys .pickel img {
-    width: 100%;
-  }
-  .tapestry .tapestry-wrapper .tapestrys h2 {
-    padding-top: 3vw;
-    color: white;
-    font-size: 2.5vw;
-  }
-  .tapestry .tapestry-wrapper .tapestrys p {
-    padding-top: 3vw;
-    width: 100%;
-    font-size: 2.8vw;
-    line-height: 1.6;
-    padding-bottom: 8vw;
   }
 
   .about-emi {
@@ -560,7 +524,7 @@ a:hover {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -568,20 +532,26 @@ a:hover {
   }
   .about-emi .about-emi-wrapper .about-emis {
     width: 100%;
-    background-color: white;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    background-size: cover;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 4vw 4vw 32vw 4vw;
-    margin-bottom: 3vw;
+    margin: 6vw 0;
+    height: 94vw;
   }
   .about-emi .about-emi-wrapper .about-emis h3 {
+    padding-top: 5vw;
     text-align: center;
-    font-size: 4vw;
+    font-size: 4.5vw;
     padding-bottom: 3vw;
+    text-shadow: 3px 3px 3px #000;
   }
   .about-emi .about-emi-wrapper .about-emis p {
-    font-size: 2.8vw;
+    font-size: 3.5vw;
+    margin: 0 auto;
+    width: 60%;
+    text-shadow: 3px 3px 3px #000;
   }
 
   .partners {
