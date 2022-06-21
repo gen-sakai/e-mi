@@ -596,4 +596,52 @@ a:hover {
   .roadmap p {
     font-size: 4vw;
   }
+
+  .card {
+    width: 100%;
+    margin-top: 2vw;
+    background-color: skyblue;
+    padding: 2vw 0;
+  }
+  .card .card-inner {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .card .card-inner .card-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .card .card-inner .card-wrapper .cards {
+    background-color: white;
+    padding: 4vw;
+    width: 100%;
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+  .card .card-inner .card-wrapper .cards img {
+    display: block;
+    width: 100%;
+    margin-bottom: 3vw;
+  }
+  .card .card-inner .card-wrapper .cards p {
+    font-size: 3vw;
+  }
 }/*# sourceMappingURL=style.css.map */

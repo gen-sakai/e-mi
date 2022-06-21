@@ -502,10 +502,6 @@ a:hover {
               padding-bottom: 1vw;
             }
           }
-          
-  
-          
-          
         }
       }
     }
@@ -515,6 +511,42 @@ a:hover {
     width: 100%;
     p{
       font-size: 4vw;
+    }
+  }
+
+
+
+  .card{
+    width: 100%;
+    margin-top: 2vw;
+    background-color: skyblue;
+    padding: 2vw 0;
+    .card-inner{
+      width: 85vw;
+      margin: 0 auto;
+      .card-wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .cards{
+          background-color: white;
+          padding: 4vw;
+          width: 100%;
+          box-shadow: 2px 2px 5px rgba(0,0, 0, 0.2);
+          margin-top: 5vw;
+          margin-bottom: 5vw;
+          img{
+            display: block;
+            width: 100%;
+            margin-bottom: 3vw;
+          }
+          p{
+            font-size: 3vw;
+          }
+        }
+      }
     }
   }
   
