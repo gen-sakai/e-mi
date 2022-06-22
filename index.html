@@ -24,6 +24,10 @@
 
   <!-- リセットcss -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  
+  <!-- swiper css -->
+  <link rel="stylesheet" href="swiper-bundle.css">
+
   <!-- css -->
   <link rel="stylesheet" href="style.css">
   
@@ -32,6 +36,8 @@
   
   <!-- js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  
 </head>
 <body>
 
@@ -51,13 +57,25 @@
       <nav>
         <ul>
           <li>
+            <a href="index.html">TOP</a>
+          </li>
+          <li>
             <a href="about-emi.html">What is e-mining</a>
+          </li>
+          <li>
+            <a href="">What is Obcatena</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="https://e-mi.jp/pint_e-mi">イーマイ×PinT</a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
-
+  
   <section class="section1">
 
   </section>
@@ -74,10 +92,10 @@
         <img src="img/tapestry1.png" alt="">
       </div>
       <div class="tapestrys">
-        <img src="img/tapestry2.png" alt="">
+        <img src="img/tapestry3.png" alt="">
       </div>
       <div class="tapestrys">
-        <img src="img/tapestry3.png" alt="">
+        <img src="img/tapestry2.png" alt="">
       </div>
       <div class="tapestrys">
         <img src="img/tapestry4.png" alt="">
@@ -85,7 +103,7 @@
     </div>
   </div>
 
-  <div class="card">
+  <!-- <div class="card">
     <div class="card-inner">
       <div class="card-wrapper">
         
@@ -116,17 +134,30 @@
 
       </div>
     </div>
-  </div>
-
-  
+  </div> -->
 
 
-
-
-  
-  
+  <div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="img/card.png" alt="Swiper01"></div>
+			<div class="swiper-slide"><img src="img/card.png" alt="Swiper02"></div>
+			<div class="swiper-slide"><img src="img/card.png" alt="Swiper03"></div>
+		</div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	</div>
 
   <!-- js -->
   <script src="js/main.js"></script>
+  <script src="js/swiper-bundle.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      loop: true,
+    });
+  </script>
 </body>
 </html>

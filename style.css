@@ -101,12 +101,12 @@ a:hover {
   position: fixed;
   z-index: 101;
   width: 100%;
-  height: 3vw;
-  background-color: black;
-  padding: 0.5vw 0;
+  background: url(img/menu-bg.png) center center no-repeat;
+  background-size: cover;
+  padding: 0.4vw 0;
 }
 .gnav .gnav-wrapper {
-  width: 20%;
+  width: 60%;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -148,6 +148,7 @@ a:hover {
 }
 .gnav .gnav-wrapper nav ul li {
   display: block;
+  margin-left: 3vw;
 }
 .gnav .gnav-wrapper nav ul li a {
   font-size: 1vw;
@@ -157,7 +158,7 @@ a:hover {
 .section1 {
   width: 100%;
   height: 40.4vw;
-  background: url(img/mainvisual.jpg) center bottom no-repeat;
+  background: url(img/mainvisual.png) center bottom no-repeat;
   background-size: contain;
 }
 
@@ -175,7 +176,9 @@ a:hover {
 
 .tapestry {
   width: 100%;
-  margin-top: 1.5vw;
+  padding-top: 1.8vw;
+  padding-bottom: 1.8vw;
+  background-color: rgb(37, 67, 68);
 }
 .tapestry .tapestry-wrapper {
   width: 80%;
@@ -257,7 +260,6 @@ a:hover {
 
 .card {
   width: 100%;
-  margin-top: 2vw;
   background-color: skyblue;
   padding: 2vw 0;
 }
@@ -298,8 +300,9 @@ a:hover {
 
 .partners {
   width: 100%;
-  margin: 2vw 0;
+  padding: 4vw 0;
   height: auto;
+  background-color: #2D1925;
 }
 .partners .partners-inner {
   width: 80vw;
@@ -316,20 +319,20 @@ a:hover {
 }
 .partners .partners-inner .partners-content .tapestry-bg .partners-contents {
   position: absolute;
-  top: 10vw;
+  top: 12vw;
   z-index: 2;
-  left: 17vw;
+  left: 0;
 }
-.partners .partners-inner .partners-content .tapestry-bg .partners-contents h3 {
-  text-align: center;
-  font-size: 3vw;
-  color: white;
-  padding-bottom: 3vw;
+.partners .partners-inner .partners-content .tapestry-bg .partners-contents .partners-list {
+  width: 50%;
+  margin: 0 auto;
 }
-.partners .partners-inner .partners-content .tapestry-bg .partners-contents p {
-  color: white;
-  font-size: 2vw;
-  padding-bottom: 1vw;
+.partners .partners-inner .partners-content .tapestry-bg .partners-contents .partners-list a {
+  width: 100%;
+  display: block;
+}
+.partners .partners-inner .partners-content .tapestry-bg .partners-contents .partners-list a img {
+  width: 100%;
 }
 
 .roadmap {
@@ -353,6 +356,78 @@ a:hover {
   font-size: 2vw;
   margin: 0 auto;
 }
+
+.contact-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 52, 230)), to(rgb(21, 33, 73)));
+  background: -webkit-linear-gradient(top, rgb(0, 52, 230) 0%, rgb(21, 33, 73) 100%);
+  background: linear-gradient(180deg, rgb(0, 52, 230) 0%, rgb(21, 33, 73) 100%);
+}
+.contact-wrapper .contact-inner {
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2vw;
+}
+.contact-wrapper .contact-inner h2 {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 2vw;
+  color: #fff;
+}
+.contact-wrapper .contact-inner form {
+  width: 100%;
+  display: block;
+}
+.contact-wrapper .contact-inner form .input-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1vw 0;
+}
+.contact-wrapper .contact-inner form .input-form label {
+  display: block;
+  width: 30%;
+  font-size: 1vw;
+  color: #fff;
+}
+.contact-wrapper .contact-inner form .input-form input, .contact-wrapper .contact-inner form .input-form textarea, .contact-wrapper .contact-inner form .input-form select {
+  display: block;
+  width: 60%;
+  border-radius: 0.2vw;
+  border: none;
+  padding: 0.3vw;
+}
+.contact-wrapper .contact-inner form .input-form textarea {
+  height: 10vw;
+}
+.contact-wrapper .contact-inner .submit {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5vw;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  border: none;
+  background-color: rgb(214, 214, 214);
+  -webkit-box-shadow: 0 0.2vw 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0.2vw 0 rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
 
 @media screen and (max-width: 390px) {
   .br-sp {
@@ -391,7 +466,6 @@ a:hover {
     position: fixed;
     z-index: 101;
     width: 100%;
-    height: 10vw;
     background-color: black;
     padding: 2vw 0;
   }
@@ -447,7 +521,7 @@ a:hover {
   .section1 {
     width: 100%;
     height: 47vw;
-    background: url(img/mainvisual.jpg) center bottom no-repeat;
+    background: url(img/mainvisual.png) center bottom no-repeat;
     background-size: contain;
   }
 
@@ -465,7 +539,6 @@ a:hover {
 
   .tapestry {
     width: 100%;
-    margin-top: 1.5vw;
   }
   .tapestry .tapestry-wrapper {
     width: 75%;
@@ -564,7 +637,7 @@ a:hover {
     margin: 0 auto;
   }
   .partners .partners-inner .partners-content .tapestry-bg {
-    width: 60%;
+    width: 85%;
     margin: 0 auto;
     position: relative;
   }
@@ -574,9 +647,9 @@ a:hover {
   }
   .partners .partners-inner .partners-content .tapestry-bg .partners-contents {
     position: absolute;
-    top: 10vw;
+    top: 20vw;
     z-index: 2;
-    left: 19vw;
+    left: 0;
   }
   .partners .partners-inner .partners-content .tapestry-bg .partners-contents h3 {
     text-align: center;
@@ -599,7 +672,7 @@ a:hover {
 
   .card {
     width: 100%;
-    margin-top: 2vw;
+    margin-top: 0;
     background-color: skyblue;
     padding: 2vw 0;
   }
@@ -643,5 +716,79 @@ a:hover {
   }
   .card .card-inner .card-wrapper .cards p {
     font-size: 3vw;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 26vw;
+    height: 100vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 52, 230)), to(rgb(21, 33, 73)));
+    background: -webkit-linear-gradient(top, rgb(0, 52, 230) 0%, rgb(21, 33, 73) 100%);
+    background: linear-gradient(180deg, rgb(0, 52, 230) 0%, rgb(21, 33, 73) 100%);
+  }
+  .contact-wrapper .contact-inner {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4vw;
+  }
+  .contact-wrapper .contact-inner h2 {
+    text-align: center;
+    font-size: 6vw;
+    font-weight: bold;
+    margin-bottom: 6vw;
+    color: #fff;
+  }
+  .contact-wrapper .contact-inner form {
+    width: 100%;
+    display: block;
+  }
+  .contact-wrapper .contact-inner form .input-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 4vw 0;
+  }
+  .contact-wrapper .contact-inner form .input-form label {
+    display: block;
+    width: 100%;
+    font-size: 3.8vw;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1vw;
+  }
+  .contact-wrapper .contact-inner form .input-form input, .contact-wrapper .contact-inner form .input-form textarea, .contact-wrapper .contact-inner form .input-form select {
+    display: block;
+    width: 100%;
+    border-radius: 1vw;
+    border: none;
+    padding: 1vw;
+  }
+  .contact-wrapper .contact-inner form .input-form textarea {
+    height: 10vw;
+  }
+  .contact-wrapper .contact-inner .submit {
+    width: 100%;
+    display: block;
+    margin: 10vw auto 0;
+    padding: 1.8vw;
+    font-size: 3.2vw;
+    border-radius: 1vw;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    -webkit-box-shadow: 0 0.2vw 0 rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0.2vw 0 rgba(0, 0, 0, 0.6);
   }
 }/*# sourceMappingURL=style.css.map */
