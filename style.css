@@ -424,11 +424,6 @@ a:hover {
           box-shadow: 0 0.2vw 0 rgba(0, 0, 0, 0.6);
 }
 
-
-
-
-
-
 @media screen and (max-width: 390px) {
   .br-sp {
     display: block;
